@@ -1,0 +1,212 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+p,
+h1,
+span {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background: #16151d;
+    display: flex;
+    width: 100%;
+    padding: 10px 100px !important;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #393746;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 0 20px;
+    width: 30%;
+}
+
+li>a {
+    color: #949aa3;
+    text-decoration: none;
+}
+
+.container_padding {
+    padding: 0 10%;
+}
+
+.container_first {
+    width: 100%;
+    padding-top: 200px;
+    background: linear-gradient(#111720, #19181d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_first_introducingText {
+    color: #758590;
+    letter-spacing: 10px;
+    font-size: 11px;
+}
+
+h1 {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 60px;
+    width: 50%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container_first_description {
+    color: #647989;
+    text-align: center;
+    font-size: 15px;
+    width: 40%;
+}
+
+.container_first_inputContainer {
+    background: #192430;
+    padding: 3px;
+    display: flex;
+    min-height: 50px;
+    min-width: 30%;
+    justify-content: space-between;
+    margin: 30px 0 60px 0;
+}
+
+#emailInput {
+    background: transparent;
+    border: none;
+    color: #647989;
+    outline: none;
+}
+
+#emailInput::placeholder {
+    color: #647989;
+}
+
+.btn-primary {
+    background: #3b52c1 !important;
+    border-color: #3b52c1 !important;
+}
+
+.container_second {
+    background: #1a1921;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+span {
+    color: #3b52c1;
+    font-size: 12px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #898990;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.container_second_grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    margin: 40px 0;
+}
+
+.grid_card {
+    background: #27282d;
+    min-height: 200px;
+    padding: 40px;
+}
+
+.grid_card>p {
+    color: #fff;
+    margin: 0;
+}
+
+
+.grid_card_title {
+    font-size: 14px;
+    margin-top: 20px !important;
+}
+
+.grid_card_subtitle {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.span_inline {
+    border: 0.1px solid #898990;
+    color: #898990;
+    padding: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 5px 40px !important;
+        flex-direction: column;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    .container_padding {
+        padding: 0 20px;
+    }
+
+    .container_first {
+        padding-top: 100px;
+    }
+
+    .container_first_introducingText {
+        font-size: 9px;
+    }
+
+    h1 {
+        font-size: 40px;
+        width: 80%;
+    }
+
+    .container_first_description {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .container_second {
+        padding-top: 20px;
+    }
+
+    span {
+        color: #3b52c1;
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .container_second_grid_container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
